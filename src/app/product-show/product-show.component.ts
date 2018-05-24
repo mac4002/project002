@@ -69,7 +69,10 @@ for (let i = 0; i < products.length; i++) {
       this.router.navigate(['/not-found']);
     }
   }
-  ngOnInit() {
+  ngOnInit(): void {
+
+    const id: number = parseInt(this.route.snapshot.paramMap.get('id'),10);
+    console.log(`le nombre correspondant à l\'id passé dans la route est: ${id}`);
   }
 
 }
