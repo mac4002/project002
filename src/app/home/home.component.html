@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <img src="../assets/images.jpg" />
+
+ <div class="editable-area" [attr.contenteditable]="isEditable" [ngClass]="editableClasses">Ici ma zone de texte</div>
+ <a href="#" class="btn-large" (click)="toggleEdit()">Editer</a>
+
+
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="/EditProduits">Edit Produits</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+
+

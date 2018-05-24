@@ -1,0 +1,17 @@
+<h1 [ngClass]="objClasses">Édition d'un produit</h1>
+
+<div class="container">
+  <form action="">
+      <div class="input-field">
+    <input type="text" name="name" id="name" [(ngModel)]="firstProduct.name">
+    <label for="name">Nom du produit</label>
+    </div>
+
+    <div class="input-field">
+    <textarea name="description" id="description" cols="10" rows="10" [(ngModel)]="firstProduct.description" class="materialize-textarea"></textarea>
+    <label for="description">Description</label>
+    </div>
+  </form>
+</div>
+
+<pre>{{ firstProduct | json }}</pre>

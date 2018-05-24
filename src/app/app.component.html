@@ -1,0 +1,55 @@
+<!-- The content below is only a placeholder and can be replaced.
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <img src="../assets/images.jpg" />
+
+ <div class="editable-area" [attr.contenteditable]="isEditable" [ngClass]="editableClasses">Ici ma zone de texte</div>
+ <a href="#" class="btn-large" (click)="toggleEdit()">Editer</a>
+
+
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+ <app-list-product></app-list-product>
+<app-product-edit></app-product-edit>
+ -->
+ <ul id="dropdown1" class="dropdown-content">
+  
+      <li><a routerLink="ShowProduit/1">Produits 1</a></li>
+      <li><a routerLink="ShowProduit/2">Produits 2</a></li>
+      <li><a routerLink="ShowProduit/3">Produits 3</a></li>
+      <li><a routerLink="ShowProduit/350">Produits 350</a></li>
+      <li><a routerLink="ShowProduit/barbar">Produits barbar</a></li>
+      <li><a routerLink="ShowProduit/">Produits null</a></li>
+      <li><a routerLink="ShowProduit/{{test}}">Test</a></li>
+      <li><a routerLink="ShowProduit/Alert('gaga')">Alert</a></li>
+ 
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="/Produits">Liste de Produits</a></li>
+      <li><a routerLink="/EditProduits">Editer de Produits</a></li>
+      <li><a routerLink="/ShowProduit">Show de Produits</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Links<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+ <router-outlet></router-outlet>
+<!--  <app-list-product></app-list-product>
+ <app-product-edit></app-product-edit> -->

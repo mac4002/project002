@@ -1,0 +1,24 @@
+<article *ngIf="product; else blockNoSelected" class="container">
+    <h3>Détail produit <span id="smaller">ID Number : {{ product.id}}</span></h3>
+  <table class="container">
+    <TR>
+      <th>Product Name</th>
+      <th>Product Description</th>
+    </TR>
+    <TR>
+        <td>{{ product.name}}</td>
+        <td>{{ product.description}}</td>
+      </TR>
+  </table>
+</article>
+  
+
+<!--   <h3>Vote !</h3>
+<input type="range" min="0" max="5" #note>
+<button class="btn" (click)="onVoted(note.value)">Voter</button>
+</article>
+<ng-template #blockNoSelected>
+  <p>Pas de produit selectionné</p>
+</ng-template> -->
+
+

@@ -1,0 +1,20 @@
+<p *ngIf="showContent">
+  list-product works!
+</p>
+
+<ul>
+  <li *ngFor="let patisserie of patisseries; let i = index" > {{i}} {{patisserie}}</li>
+</ul>
+
+<div [ngSwitch]="dayOfWeek" > Jour de la semaine
+  <p *ngSwitchCase = "'Lundi'"> C'est lundi</p>
+  <p *ngSwitchCase = "'Mardi'" > c'est mardi</p>
+  <p *ngSwitchCase = "'Mercredi'"> c'est mercredi</p>
+  <p *ngSwitchDefault> Nous sommes ni lundi ni mardi ni mercredi</p>
+</div>
+
+<ul>
+  <li (click)="voiture = product;" *ngFor="let product of products; let i = index" > {{i}} {{product.name}}</li>
+</ul>
+<app-product-show [product]="voiture" (voted)="calculMoyenne($event)"></app-product-show>
+<p>Le résultat du vote est: {{ moyenne }}</p>

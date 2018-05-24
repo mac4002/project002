@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+}
+
+.editable-area{
+    padding: 10px;
+}
+.editable{
+    background: #000;
+    color: #fff;
+}
+.hover{
+    background-color: darkslategrey;
+    color: sandybrown;
+}
